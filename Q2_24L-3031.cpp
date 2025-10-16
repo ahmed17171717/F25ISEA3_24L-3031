@@ -94,15 +94,15 @@ bool isWordComplete(const bool guessed[], int length)
     return true;
 }
 
-// --- Converts uppercase to lowercase manually (no cctype) ---
+// --- Converts uppercase to lowercase  ---
 char toLowerChar(char ch)
 {
     if (ch >= 'A' && ch <= 'Z')
-        ch = ch + 32; // convert manually
+        ch = ch + 32; 
     return ch;
 }
 
-// --- Checks if character is a letter manually (no cctype) ---
+// --- Checks if character is a letter manually ---
 bool isAlphabet(char ch)
 {
     return (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
@@ -174,4 +174,5 @@ void playGame(const string& word)
     cout << "The word was: " << word << endl;
     cout << "========================================\n";
 }
+
 
